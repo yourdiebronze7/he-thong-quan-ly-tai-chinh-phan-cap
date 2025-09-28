@@ -12,7 +12,7 @@ app.get('/api/transactions', (req, res) => {
 app.post('/api/transactions', (req, res) => {
     const transaction = req.body;
     // Save the transaction to the database
-    res.status(201).json({ status: 'Transaction has been recorded' });
+    res.status(201).json({ message: 'Transaction has been recorded', transaction });
 });
 
 const PORT = process.env.PORT || 3000;
