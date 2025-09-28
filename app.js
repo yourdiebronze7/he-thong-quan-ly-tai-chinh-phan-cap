@@ -5,14 +5,14 @@ const app = express();
 app.use(bodyParser.json());
 
 app.get('/api/transactions', (req, res) => {
-    // Trả danh sách giao dịch từ cơ sở dữ liệu
+    // Trả về danh sách giao dịch từ cơ sở dữ liệu
     res.json([]);
 });
 
 app.post('/api/transactions', (req, res) => {
     const transaction = req.body;
     // Lưu giao dịch vào cơ sở dữ liệu
-    res.status(201).json({ status: 'Transaction recorded' });
+    res.status(201).json({ status: 'Giao dịch đã được ghi lại' });
 });
 
 const PORT = process.env.PORT || 3000;
