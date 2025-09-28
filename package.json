@@ -1,7 +1,7 @@
 {
   "name": "he-thong-quan-ly-tai-chinh-phan-cap",
   "version": "1.0.0",
-  "description": "Hệ Thống QLTCP",
+  "description": "Financial Management System",
   "main": "app.js",
   "scripts": {
     "start": "node app.js"
