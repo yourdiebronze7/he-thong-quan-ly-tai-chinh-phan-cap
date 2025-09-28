@@ -1,7 +1,7 @@
 {
   "name": "he-thong-quan-ly-tai-chinh-phan-cap",
   "version": "1.0.0",
-  "description": "Financial Management System",
+  "description": "A comprehensive financial management system for decentralized finance.",
   "main": "app.js",
   "scripts": {
     "start": "node app.js"
