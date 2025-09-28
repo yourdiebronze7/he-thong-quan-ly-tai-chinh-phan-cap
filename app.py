@@ -8,7 +8,7 @@ def manage_transactions():
     if request.method == 'POST':
         data = request.get_json()  # Use get_json() to parse request data
         # Save transaction to the database
-        return jsonify({'status': 'Transaction recorded'}), 201
+        return jsonify({'message': 'Transaction recorded', 'data': data}), 201
     else:
         # Return list of transactions
         return jsonify([])
