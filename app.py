@@ -6,7 +6,7 @@ app = Flask(__name__)
 @app.route('/api/transactions', methods=['GET', 'POST'])
 def manage_transactions():
     if request.method == 'POST':
-        data = request.json
+        data = request.get_json()  # Updated to use get_json()
         # Lưu giao dịch vào cơ sở dữ liệu
         return json.dumps({'status': 'Transaction recorded'}), 201
     else:
