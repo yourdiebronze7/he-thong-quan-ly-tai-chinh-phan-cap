@@ -1,4 +1,4 @@
-from flask import Flask, request
+from flask import Flask, request, jsonify
 import json
 
 app = Flask(__name__)
@@ -8,10 +8,10 @@ def manage_transactions():
     if request.method == 'POST':
         data = request.get_json()  # Updated to use get_json()
         # Lưu giao dịch vào cơ sở dữ liệu
-        return json.dumps({'status': 'Transaction recorded'}), 201
+        return jsonify({'status': 'Transaction recorded'}), 201
     else:
         # Trả danh sách giao dịch
-        return json.dumps([])
+        return jsonify([])
 
 if __name__ == '__main__':
     app.run(debug=True)
